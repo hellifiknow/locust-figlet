@@ -21,9 +21,9 @@ locust:
 workers:
   # If kind == DaemonSet, 1 worker will run each node.
   # If kind == Deployment, n replicas will run across the entire namespace (Scheduler controls distribution)
-  kind: DaemonSet
+  kind: Deployment
   # replicas only applies if kind == Deployment
-  replicas: 6
+  replicas: 4
 
 serviceAccount:
   # Specifies whether a service account should be created
