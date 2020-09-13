@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: hellifiknow/locust-figlet
-  tag: latest
+  repository: hellifiknow/repothis
+  tag: locust-figlet
   pullPolicy: Always
 
 imagePullSecrets: []
