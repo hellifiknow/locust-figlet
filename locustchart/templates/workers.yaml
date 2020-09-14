@@ -5,9 +5,9 @@ metadata:
   labels:
     {{- include "locust.labels" . | nindent 4 }}
 spec:
-  {{- if eq .Values.workers.kind "Deployment" }}
-  replicas: {{ .Values.workers.replicas }}
-  {{- end }}
+  #{{- if eq .Values.workers.kind "Deployment" }}
+  #replicas: {{ .Values.workers.replicas }}
+  #{{- end }}
   selector:
     matchLabels:
       {{- include "locust.selectorLabels" . | nindent 6 }}
