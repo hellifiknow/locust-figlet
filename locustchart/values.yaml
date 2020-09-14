@@ -23,7 +23,7 @@ workers:
   # If kind == Deployment, n replicas will run across the entire namespace (Scheduler controls distribution)
   kind: Deployment
   # replicas only applies if kind == Deployment
-  replicas: 4
+  replicas: 1
 
 serviceAccount:
   # Specifies whether a service account should be created
